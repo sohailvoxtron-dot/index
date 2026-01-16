@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Application | Voxtron Solutions</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        background: #fff;
+        margin: 40px auto;
+        padding: 25px 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    h2 {
+        text-align: center;
+        color: #203a43;
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-top: 12px;
+    }
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+    textarea {
+        resize: none;
+    }
+    .btn {
+        margin-top: 20px;
+        width: 100%;
+        background: #203a43;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background: #0f2027;
+    }
+    .footer {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 15px;
+        color: #666;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Job Application Form</h2>
+
+    <form id="jobForm">
+
+        <label>Full Name</label>
+        <input type="text" name="name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email">
+
+        <label>City</label>
+        <input type="text" name="city">
+
+        <label>Education</label>
+        <select name="education">
+            <option value="">Select</option>
+            <option>Matric</option>
+            <option>Intermediate</option>
+            <option>Graduate</option>
+            <option>Masters</option>
+        </select>
+
+        <label>Job Type</label>
+        <select name="job_type" required>
+            <option value="">Select</option>
+            <option>Fresh</option>
+            <option>Software</option>
+            <option>Sales</option>
+            <option>Marketing</option>
+        </select>
+
+        <label>Experience</label>
+        <select name="experience">
+            <option value="">Select</option>
+            <option>Fresher</option>
+            <option>1 - 2 Years</option>
+            <option>3 - 5 Years</option>
+            <option>5+ Years</option>
+        </select>
+
+        <label>Available Shift</label>
+        <select name="shift">
+            <option value="">Select</option>
+            <option>Day</option>
+            <option>Night</option>
+            <option>Both</option>
+        </select>
+
+        <label>Skills / Short Introduction</label>
+        <textarea name="skills" rows="4"></textarea>
+
+        <button class="btn" type="submit">Submit Application</button>
+
+    </form>
+
+    <div class="footer">
+        © 2026 Voxtron Solutions | All Rights Reserved
+    </div>
+</div>
+
+</body>
+</html>
 
